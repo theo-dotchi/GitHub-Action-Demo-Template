@@ -1,17 +1,29 @@
 ## Agenda
 
-<img width="925" height="489" alt="image" src="https://github.com/user-attachments/assets/ee10a371-c8dc-4c4c-85de-e35751a07618" />
+### 1 What is GitHub Action ? (1min)
+### 2 Why it can improve your organization (2min)
+### 3 How does it automate workflow ? (2 min)
+### 4 Demo (Setup, Marketplace, Custom action, Debugging) (12min)
+### 5 Conclusion (2min)
 
-### 📖 
+## GitHub Actions — Automating Developer Workflows
 
-<img width="1388" height="624" alt="image" src="https://github.com/user-attachments/assets/c7b28407-5a2c-4a69-ac9d-608fd487e75d" />
+GitHub Actions is a platform that automates developer workflows directly where the code lives.  
+Instead of relying on external tools, teams define workflows as code that react automatically to events such as pull requests, commits, or releases. From continuous integration and delivery to testing, security checks, and operational tasks, GitHub Actions enables teams to standardize and automate the entire software delivery lifecycle. By embedding automation inside GitHub itself, developers receive fast feedback, organizations enforce consistent practices, and teams can deliver changes faster and more safely—without changing how developers work.
 
+Or a slightly more expressive version:
+
+[ Merged Code ]
+      ↓
+[ Automated Tests ]
+      ↓
+[ Build & Package ]
+      ↓
+[ Deployment ]
 
 
 > [!NOTE]
 > GitHub action is a platform that automates developpement workflow, not only CI/CD
-> - [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
-> - [Events that trigger workflows](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows)
 
 
 
