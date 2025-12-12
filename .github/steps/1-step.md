@@ -1,48 +1,30 @@
-## Step 1: Create a workflow file
+## Agenda
 
-### 📖 Theory: Introduction to workflows
+<img width="925" height="489" alt="image" src="https://github.com/user-attachments/assets/ee10a371-c8dc-4c4c-85de-e35751a07618" />
 
-A **workflow** is an automated process that you define in your repository. Workflows are described in YAML files stored in the `.github/workflows` directory. Each workflow is triggered by specific [events](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows) happening in your repository such as opening a pull request, pushing code, or creating an issue.
+### 📖 
 
-Workflows let you automate tasks like building, testing, or deploying your code, and can respond to almost any activity in your project.
+<img width="1388" height="624" alt="image" src="https://github.com/user-attachments/assets/c7b28407-5a2c-4a69-ac9d-608fd487e75d" />
+
+
 
 > [!NOTE]
-> If you want to learn more check out these resources:
+> GitHub action is a platform that automates developpement workflow, not only CI/CD
 > - [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
 > - [Events that trigger workflows](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows)
 
-### ⌨️ Activity: Create a workflow file
 
-1. Open this repository in a new browser tab so you can work on the steps while you read the instructions in this tab.
 
-1. In the **Code** tab of your repository, create a new branch named `welcome-workflow`.
+#### DORA Metrics (plus Security)
 
-   <img width="400" alt="create branch screenshot" src="https://github.com/user-attachments/assets/8aa4a918-c877-4214-9efe-c9a99ca6421b" />
+| Metric | What it measures | low performer | high performer| How to measure in practice |
+|---|---|---:|---:|---|
+| **Lead time for changes** | Time from code committed to code running in production | **Months** | **< 1 day** | PR merge → deploy timestamp (from CI/CD + change management) |
+| **Deployment frequency** | How often you deploy to production | **Once per month (or less)** | **On-demand / multiple times per day** | Count production deployments per day/week |
+| **Change failure rate** | % of deployments causing incidents / rollbacks / hotfixes | **31–45%** | **0–15%** | Incidents linked to deploys + rollback/hotfix tags |
+| **Mean time to recovery (MTTR)** | How fast you restore service after an incident | **Weeks to months** | **< 1 hour** | Incident start → service restored time |
+| **Security (recommended add-on)** | How quickly and reliably you remediate vulnerabilities and prevent regressions | **Vulns linger for months; fixes are ad-hoc** | **Fix SLAs met; automated detection + policy gates** | Time-to-remediate (TTR), % repos with scanning enabled, vulnerable dependency age, secret exposure rate |
 
-1. In the `welcome-workflow` branch, navigate to the `.github/workflows` directory.
+> Notes (DORA benchmarks): The “elite” vs “low” ranges above reflect commonly cited DORA performance categories.
+```
 
-1. Create a new file named `welcome.yml` in the `.github/workflows` directory with the following content:
-
-   ```yaml
-   name: Post welcome comment
-   on:
-     pull_request:
-       types: [opened]
-   permissions:
-     pull-requests: write
-   ```
-
-   > [!NOTE]
-   > This is an incomplete workflow file. It is normal if you receive an error message. One step at a time! 😎
-
-1. Commit your changes directly to the `welcome-workflow` branch.
-
-1. With your workflow file committed, Mona will check your work and prepare the next step in this exercise!
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- Make sure you are on the `welcome-workflow` branch when creating the workflow file.
-- Double-check the file path and YAML indentation.
-
-</details>
