@@ -1,6 +1,8 @@
-<img width="1059" height="787" alt="image" src="https://github.com/user-attachments/assets/ddbef9b8-24d2-47f5-873f-a029264f3259" /># GitHub Actions Introduction
+# GitHub Actions Introduction
 
 <img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+
+<img width="368" height="361" alt="image" src="https://github.com/user-attachments/assets/31da3d58-f88d-4e8a-ab12-5d9218099cd1" />
 
 Hi everyone
 
